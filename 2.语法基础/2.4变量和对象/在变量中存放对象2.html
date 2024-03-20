@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var user = {
+            accout: "abc",
+            pwd: "123456",
+            isVip: true,
+            age: 18
+        };
+
+        console.log(user.pwd);
+
+        // 将密码改为654321
+       user.pwd = "654321";
+       console.log(user);
+
+       user.tradePwd = "asdadf";
+       console.log(user);
+
+       var user2;
+
+       user2.accout = "adasd";
+
+       console.log(user2); // 报错，原始类型undefined中不可以有属性
+    </script>
+</body>
+
+</html>

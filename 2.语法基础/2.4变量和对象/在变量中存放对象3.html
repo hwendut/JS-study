@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var user = {
+            accout: "abc",
+            pwd: "123456",
+            isVip: true,
+            age: 18,
+            address: {
+                country: "中国",
+                city: "大连"
+            }
+        };
+
+        console.log(user.address.city);
+
+        var user2 = {
+            accout: user.accout,
+        };
+
+        console.log(user.accout, user2.accout);
+
+        var user3 = {};
+        user3.address = user.address;
+        console.log(user.address, user3.address);
+        console.log(user, user3);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 定义一个变量，存放对象，包括姓名、年龄、性别、女朋友（姓名、年龄、性别）
+
+        // 2. 定义一个变量，存放对象，包括姓名、年龄、性别、女朋友，女朋友和第一个变量的女朋友是一样的
+
+        var boy1 = {
+            name: "zhangsan",
+            age: 18,
+            gender: true,
+            girlFriend: {
+                name: "lisi",
+                age: 18,
+                gender: false
+            }
+        };
+
+        var boy2 = {
+            name: "wangwu",
+            age: 18,
+            gender: true,
+            girlFriend: boy1.girlFriend
+        };
+
+        console.log(boy1, boy2);
+        console.log(boy1.girlFriend.name, boy2.girlFriend.name);
+
+        delete boy1.girlFriend;
+        console.log(boy1.girlFriend);
+        console.log(boy1);
+    </script>
+</body>
+</html>
